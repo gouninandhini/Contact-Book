@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- Left side -->
+    <div class="left-side">
+
+        <h1 class="title">Contact Book</h1>
+        <p id="totalCount">0 Contacts</p>
+
+        <button id="openFormBtn" class="add-btn">+ Add Contact</button>
+
+        <div class="left-section">
+            <p class="label">👥 Contacts</p>
+
+            <div class="letters">
+                <span class="letter" data-value="All">All</span>
+                <span class="letter" data-value="A">A</span>
+                <span class="letter" data-value="B">B</span>
+                <span class="letter" data-value="C">C</span>
+            </div>
+
+            <div id="miniList"></div>
+        </div>
+
+    </div>
+
+    <!-- Right side -->
+    <div class="right-panel">
+
+        <div class="controls">
+            <input type="text" id="searchBox" placeholder="Search contacts...">
+
+            <div class="sorting">
+                <button id="btnAZ" class="active">A–Z</button>
+                <button id="btnZA">Z–A</button>
+            </div>
+        </div>
+
+        <h3>⭐ Favourites</h3>
+        <div id="favContainer"></div>
+
+        <div id="allContainer"></div>
+
+    </div>
+
+</div>
+
+
+<!-- inner form -->
+<div class="popup" id="formPopup">
+    <div class="popup-box">
+
+        <h3>Add / Edit Contact</h3>
+
+        <input type="text" id="inputName" placeholder="Name">
+        <input type="text" id="inputPhone" placeholder="Phone">
+        <input type="email" id="inputEmail" placeholder="Email">
+
+        <div class="popup-actions">
+            <button id="saveContact">Save</button>
+            <button id="closePopup">Cancel</button>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
